@@ -1,0 +1,198 @@
+/* General Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   } 
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(f10.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Set position for layering */
+    z-index: 1; /* Ensures the image stays behind the nav */
+}
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay */
+    z-index: 1; /* Ensure it's behind the nav */
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(f10.jpg) center/cover no-repeat; /* Replace with your image URL */
+    position: relative;
+  }
+  
+  /* Dark overlay effect */
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Dark shade with 30% opacity */
+    z-index: -1; /* Keeps the overlay behind content */
+  }
+  
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+    z-index: 10; /* Ensures nav stays above the header */
+    position: relative; /* Set position so z-index takes effect */
+
+}
+.logo{
+    width: 70px;
+    cursor: pointer;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+.nav-links li a{
+    text-emphasis: none;
+    color: rgb(250, 246, 246);
+    text-decoration: none;
+    font-size: 22px;
+}
+nav input{
+    border-radius: 30px;
+    width: 171px;
+    height: 30px;
+}
+
+.register-btn{
+    padding: 10px 20px;
+    background-color: #000;
+    border: 2px solid #f39c12;
+    border-radius: 20px;
+    color: #f39c12;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links :hover{
+    text-decoration:underline;
+    color: #f39c12;
+}
+#rn:hover{
+    
+    background-color: #f39c12;
+    color: #fff;
+}
+
+
+header {
+    text-align: center;
+    color: white;
+    padding: 3rem 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Popular Pages Section */
+.popular-pages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 0;
+}
+
+.page-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 300px;
+    text-align: center;
+}
+
+.page-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.page-card img {
+    width: 100%;
+    height: auto;
+}
+
+.page-card h2 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.page-card p {
+    color: #777;
+    padding: 0 1rem;
+}
+
+.page-card a {
+    display: inline-block;
+    margin: 1.5rem 0;
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #6e8efb;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.page-card a:hover {
+    background-color: #a777e3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #6e8efb;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .popular-pages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page-card {
+        max-width: 90%;
+    }
+}
+
+h2{
+    color: #fff;
+}

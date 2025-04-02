@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   } 
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(78.avif);
+    background: rgba(0, 0, 0, 0.2);;
+    background-size: cover;
+    background-position: center;
+}
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(78.avif) center/cover no-repeat; /* Replace with your image URL */
+    position: relative;
+  }
+  
+  /* Dark overlay effect */
+  body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3); /* Dark shade with 30% opacity */
+    z-index: -1; /* Keeps the overlay behind content */
+  }
+  
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+
+}
+.logo{
+    width: 70px;
+    cursor: pointer;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+.nav-links li a{
+    text-emphasis: none;
+    color: rgb(250, 246, 246);
+    text-decoration: none;
+    font-size: 22px;
+}
+nav input{
+    border-radius: 30px;
+    width: 171px;
+    height: 30px;
+}
+
+.register-btn{
+    padding: 10px 20px;
+    background-color: #000;
+    border: 2px solid #f39c12;
+    border-radius: 20px;
+    color: #f39c12;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links :hover{
+    text-decoration:underline;
+    color: #f39c12;
+}
+#rn:hover{
+    
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.Text{
+    color: rgb(239, 239, 246);
+    border-radius: 30px;
+    margin: 228px;
+    height: 115px;
+    padding: 0 7%;
+
+}
+ul{
+    list-style: none;
+  align-items: center;
+}
+ul li input{
+    border-radius: 30px;
+    width: 246px;
+    height: 34px;
+}
+.Text ul li h1{
+    font-size: 36px;
+    text-align: center;
+}
+.Text ul li h2{
+    font-size: 25px;
+    font-family:cursive;
+    text-align: center;
+}
+.Text ul li h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-align: center;
+}
+/* .Text ul li input{
+    align-items: center;
+    justify-content: center;
+    
+}
+.Text ul li button {
+    display: inline-block;
+    background: #246079;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    align-items: center;
+} */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color: rgba(239, 245, 245, 0.4);
+    border-radius: 4px;
+    color:#fff;
+    width: px;
+    border-radius: 30px;
+
+  }
+  
+  #search-button {
+    padding: 8px 16px;
+    background-color: rgb(54, 54, 224); /* Makes the button transparent */
+    color: #f1f1f1; /* Text color */
+    border: 2px solid #007bff; /* Border to define the button */
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 30px;
+  }
+  
+  #search-button:hover {
+    background-color: #09498d; /* Background on hover */
+    color: #fff; /* Text color on hover */
+  }
+  
+h2{
+    color: #fff;
+}
